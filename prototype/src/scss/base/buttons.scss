@@ -40,4 +40,57 @@
 
 	}
 
+	&__color {
+		width: auto;
+		margin: 16px auto 0;
+		display: inline-block;
+		padding: 9px 40px!important;
+		height: auto!important;
+		border: 3px solid $color-tertiary;
+		font-size: 18px;
+		border-radius: 100px;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+		color: white;
+		cursor: pointer;
+		background-color: $color-tertiary;
+		transition: all 150ms ease;
+
+		&:hover {
+			background-color: white;
+			color: $color-tertiary;
+		}
+
+	}
+
+	&__hollow {
+		width: auto;
+		margin: 16px auto 0;
+		display: inline-block;
+		padding: 9px 40px!important;
+		height: auto!important;
+		border: 3px solid $color-tertiary;
+		font-size: 18px;
+		border-radius: 100px;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+		color: $color-tertiary;
+		cursor: pointer;
+		background-color: transparent;
+		transition: all 150ms ease;
+
+		&:hover {
+			background-color: $color-tertiary;
+			color: white;
+		}
+	
+		&.small {
+			margin: 8px auto 0;
+			padding: 7px 24px!important;
+			font-size: 17px;
+			border: 3px solid $color-tertiary;
+		}
+
+	}
+
 }

@@ -1,43 +1,27 @@
 .footer {
-    display: flex;
-    flex-wrap: nowrap;
-    margin: -10px -30px -30px -30px;
-    color: $color-grey3;
+    color: white;
+    padding: 64px 0;
+    position: relative;
+    background: rgb(9,214,112);
+    background: -moz-linear-gradient(150deg, rgba(9,214,112,1) 0%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(150deg, rgba(9,214,112,1) 0%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(150deg, rgba(9,214,112,1) 0%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#09d670",endColorstr="#00d4ff",GradientType=1);
 
-    @media(max-width: 1140px) {
-        margin-top: -25px;
-    }
-
-    @media(max-width: 900px) {
-        margin: -25px -15px -25px -15px;
-    }
-
-    @media(max-width: 480px) {
-        flex-wrap: wrap;
-        margin: -15px -15px -40px -15px;
+    &__title {
+        display: block;
     }
 
     &__item {
-        flex-basis: 50%;
-        max-width: 50%;
-        padding: 0 30px 15px 30px;
 
-        @media(max-width: 900px) {
-            padding: 0 15px 15px 15px;
+        hr {
+            margin: 16px 0;
+            height: 2px;
+            width: 48px;
         }
 
-        @media(max-width: 480px) {
-            flex-basis: 100%;
-            max-width: 100%;
-        }
-
-        .text-size-small {
-            line-height: 1.8;
-            margin-top: -5px;
-        }
-
-        a {
-            text-decoration: underline;
+        p {
+            margin: 0;
         }
 
     }
