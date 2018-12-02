@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+
+    #RewriteEngine On
+    
+    ##
+    ## Uncomment following lines to force HTTPS.
+    ##
+    #RewriteCond %{HTTPS} off
+    #RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]
+
+</IfModule>

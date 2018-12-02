@@ -1,0 +1,45 @@
+$color-primary: #232323;
+$color-secondary: #0FADBD;
+$color-tertiary: #09d670; // #468966 // #D89728
+$color-green1: #09d670;
+$color-green2: #0CE573;
+$color-green3: #0CF279;
+$color-light: #F8F8F8;
+$color-dark: #445878;
+$color-darker: #31353D;
+$color-ocean: #00d4ff;
+$color-blue1: #74bbe7;
+$color-blue2: #5faedf;
+$color-blue3: #0b75bb;
+$color-blue4: #065a92;
+$color-blue5: #003454;
+$color-red1: #e6204c;
+$color-red2: #e61f4b;
+$color-purple: #86318f;
+$color-grey0: #f5f5f5;
+$color-grey1: #ebebeb;
+$color-grey2: #b1b1b1;
+$color-grey3: #555555;
+
+$font-primary: 'Barlow', sans-serif;
+$font-secondary: 'Dosis', sans-serif;
+
+@mixin shadow() {
+    box-shadow: 3px 3px 10px 0 rgba($color: #000000, $alpha: 0.3);
+}
+
+@mixin gradient($c1, $c2) {
+    background: $c1;
+    background: -moz-linear-gradient(90deg, $c1 0%, $c2 100%);
+    background: -webkit-linear-gradient(90deg, $c1 0%, $c2 100%);
+    background: linear-gradient(90deg, $c1 0%, $c2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$c1",endColorstr="$c2",GradientType=1);
+}
+
+@mixin gradientA($c1, $c2) {
+    background: rgb($c1);
+    background: -moz-linear-gradient(150deg, $c1 0%, $c2 100%);
+    background: -webkit-linear-gradient(150deg, $c1 0%, $c2 100%);
+    background: linear-gradient(150deg, $c1 0%, $c2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$c1",endColorstr="$c2",GradientType=1);
+}

@@ -1,0 +1,39 @@
+.home {
+
+    &__about {
+        padding: 32px 0;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        position: relative;
+
+        .container {
+            padding: 64px 0;
+        }
+
+        i,
+        i:before {
+            font-size: 256px;
+            background: -webkit-linear-gradient(150deg, $color-tertiary, $color-ocean);
+            background: linear-gradient(150deg, $color-tertiary, $color-ocean);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: initial; /* reset Font Awesome's display:inline-block */
+        }
+
+    }
+
+    &__process {
+        padding: 64px 0;
+        background-color: #f6f9fc;
+        clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+        
+        .container {
+            padding: 96px 0;
+        }
+
+        p {
+            color: $color-dark;
+        }
+
+    }
+
+}

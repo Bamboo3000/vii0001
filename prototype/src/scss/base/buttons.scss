@@ -1,0 +1,43 @@
+.btn {
+	position: relative;
+	display: inline-block;
+	white-space: nowrap;
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none!important;
+		outline: none!important;
+
+		* {
+			text-decoration: none!important;
+			outline: none!important;
+		}
+
+	}
+
+	&__default {
+		width: auto;
+		margin: 16px auto 0;
+		display: inline-block;
+		padding: 9px 40px!important;
+		height: auto!important;
+		border: 3px solid white;
+		font-size: 18px;
+		border-radius: 100px;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+		color: $color-tertiary;
+		cursor: pointer;
+		background-color: white;
+		transition: all 150ms ease;
+
+		&:hover {
+			background-color: $color-tertiary;
+			color: white;
+			border-color: white;
+		}
+
+	}
+
+}
