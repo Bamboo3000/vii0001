@@ -1,12 +1,27 @@
 .footer {
     color: white;
-    padding: 64px 0;
+    padding: 48px 0 32px 0;
     position: relative;
     background: rgb(9,214,112);
     background: -moz-linear-gradient(150deg, rgba(9,214,112,1) 0%, rgba(0,212,255,1) 100%);
     background: -webkit-linear-gradient(150deg, rgba(9,214,112,1) 0%, rgba(0,212,255,1) 100%);
     background: linear-gradient(150deg, rgba(9,214,112,1) 0%, rgba(0,212,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#09d670",endColorstr="#00d4ff",GradientType=1);
+
+    .logo {
+
+        object,
+        svg,
+        img {
+            max-width: 72px;
+            width: 100%;
+        }
+
+    }
+
+    &__contact {
+        margin-bottom: 32px;
+    }
 
     &__title {
         display: block;
@@ -22,6 +37,49 @@
 
         p {
             margin: 0;
+        }
+
+    }
+    
+    &__copyright {
+        margin-top: 48px;
+        font-weight: 500;
+
+        a {
+            font-weight: 500;
+
+            span {
+                font-weight: 700;
+            }
+
+            i {
+                font-size: 16px;
+                color: #c92d2d;
+                -webkit-text-fill-color: #c92d2d;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: white;
+                margin-left: 3px;
+                margin-right: 3px;
+                vertical-align: -1px;
+            }
+
+            &:hover {
+                text-decoration: none;
+                color: white;
+
+                i {
+                    font-size: 20px;
+                    margin-left: 1px;
+                    margin-right: 1px;
+                    vertical-align: -2px;
+                }
+
+                span {
+                    color: #c92d2d;
+                }
+                
+            }
+
         }
 
     }
