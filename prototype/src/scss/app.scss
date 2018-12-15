@@ -6,8 +6,9 @@
 @import "base/layout";
 
 // MODULES
+@import "components/owl.carousel.min.css";
+@import "components/owl.theme.default.min.css";
 @import "components/navigation";
 @import "components/header";
 @import "components/home";
-@import "components/contact";
 @import "components/footer";

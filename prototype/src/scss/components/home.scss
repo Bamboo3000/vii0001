@@ -57,7 +57,7 @@
             height: 0;
             overflow: hidden;
             position: relative;
-            transition: all 250ms ease;
+            transition: all 200ms ease;
 
             &:after {
                 position: absolute;
@@ -73,26 +73,47 @@
                 background: -webkit-linear-gradient(150deg, rgba(9,214,112,1) 0%, rgba(0,212,255,1) 100%);
                 background: linear-gradient(150deg, rgba(9,214,112,1) 0%, rgba(0,212,255,1) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#09d670",endColorstr="#00d4ff",GradientType=1);
-                transition: all 250ms ease;
+                transition: all 200ms ease;
             }
 
             img {
-                transform: scale(1.25);
-                transition: all 250ms ease;
+                transform: scale(1.2);
+                transition: all 200ms ease;
             }
 
             span {
                 color: white;
-                margin-top: 0;
-                margin-bottom: 8px;
-                font-size: 24px;
+                margin: 0 auto;
+                font-size: 32px;
+                line-height: 1.1;
+                font-weight: 700;
+                position: relative;
+                z-index: 9;
+                transition: all 200ms ease;
             }
 
-            .link {
-                font-size: 16px;
-                font-weight: 600;
+            .description {
+                margin: 0 auto;
+                font-size: 20px;
+                line-height: 1.44;
+                text-align: center;
                 color: white;
+                font-weight: 600;
+                position: absolute;
+                transform: translateX(-50%) translateY(-50%);
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                opacity: 0;
+                z-index: 0;
+                transition: all 200ms ease;
             }
+
+            // .link {
+            //     font-size: 16px;
+            //     font-weight: 600;
+            //     color: white;
+            // }
 
             .center {
                 z-index: 9;
@@ -101,7 +122,7 @@
                 left: 50%;
                 width: 280px;
                 transform: translateX(-50%) translateY(-50%);
-                transition: all 250ms ease;
+                transition: all 200ms ease;
             }
 
         }
@@ -124,16 +145,24 @@
                 .home__products-img {
 
                     &:after {
+                        opacity: 0.8;
+                    }
+
+                    span {
                         opacity: 0;
+                    }
+
+                    .description {
+                        opacity: 1;
                     }
     
                     img {
-                        transform: scale(0.95);
+                        transform: scale(1);
                     }
     
-                    .center {
-                        opacity: 0;
-                    }
+                    // .center {
+                    //     opacity: 0;
+                    // }
 
                 }
 
