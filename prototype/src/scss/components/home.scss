@@ -2,7 +2,6 @@
 
     &__about {
         padding: 32px 0;
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
         position: relative;
 
         .container {
@@ -120,7 +119,8 @@
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                width: 280px;
+                width: 100%;
+                padding: 0 15px;
                 transform: translateX(-50%) translateY(-50%);
                 transition: all 200ms ease;
             }
@@ -173,9 +173,9 @@
     }
 
     &__clients {
-        padding: 64px 0 0 0;
+        padding: 64px 0;
         background-color: $color-grey0;
-        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
         
         .container {
             padding: 96px 0;
@@ -197,6 +197,68 @@
             align-items: center;
         }
         
+    }
+
+    &__contact {
+
+        .container {
+            padding: 64px 0;
+
+            form {
+                margin-top: 32px;
+                
+                input,
+                textarea {
+                    width: 100%;
+                    display: block;
+                    position: relative;
+                    background-color: $color-grey0;
+                    color: $color-tertiary;
+                    font-weight: 600;
+                    font-size: 21px;
+                    padding: 12px 20px 14px;
+                    border-radius: 100px;
+                    outline: 0;
+                    border: 2px solid transparent;
+                    margin-bottom: 24px;
+                    transition: all 200ms ease;
+                    line-height: 1;
+
+                    &[type="submit"] {
+                        display: inline-block;
+                        border: none!important;
+                        width: auto;
+                        padding: 14px 48px 16px;
+                        background: rgb(9,214,112);
+                        color: white;
+                        line-height: 1;
+                        transition: none;
+                        margin-top: 12px;
+
+                        &:hover {
+                            background: -moz-linear-gradient(150deg, rgba(9,214,112,1) 0%, rgba(0,212,255,1) 100%);
+                            background: -webkit-linear-gradient(150deg, rgba(9,214,112,1) 0%, rgba(0,212,255,1) 100%);
+                            background: linear-gradient(150deg, rgba(9,214,112,1) 0%, rgba(0,212,255,1) 100%);
+                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#09d670",endColorstr="#00d4ff",GradientType=1);
+                        }
+
+                    }
+
+                    &:focus {
+                        border-color: $color-tertiary;
+                    }
+
+                }
+
+                textarea {
+                    border-radius: 25px;
+                    line-height: 1.21;
+                }
+
+            }
+
+        }
+
     }
 
 }
