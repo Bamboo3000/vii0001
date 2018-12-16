@@ -32,10 +32,21 @@
 		background-color: white;
 		transition: all 150ms ease;
 
+		@media(max-width: 767px) {
+			padding: 7px 28px!important;
+			font-size: 17px;
+		}
+
 		&.small {
 			margin: 0 auto;
 			padding: 7px 24px!important;
 			font-size: 17px;
+
+			@media(max-width: 767px) {
+				padding: 6px 18px!important;
+				font-size: 16px;
+			}
+
 		}
 
 		&:hover {
@@ -62,6 +73,11 @@
 		background-color: $color-tertiary;
 		transition: all 150ms ease;
 
+		@media(max-width: 767px) {
+			padding: 7px 28px!important;
+			font-size: 17px;
+		}
+
 		&:hover {
 			background-color: white;
 			color: $color-tertiary;
@@ -85,6 +101,11 @@
 		background-color: transparent;
 		transition: all 150ms ease;
 
+		@media(max-width: 767px) {
+			padding: 7px 28px!important;
+			font-size: 17px;
+		}
+
 		&:hover {
 			background-color: $color-tertiary;
 			color: white;
@@ -95,6 +116,12 @@
 			padding: 7px 24px!important;
 			font-size: 17px;
 			border: 3px solid $color-tertiary;
+
+			@media(max-width: 767px) {
+				padding: 6px 18px!important;
+				font-size: 16px;
+			}
+
 		}
 
 	}

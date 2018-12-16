@@ -20,11 +20,21 @@
         max-height: 80vh;
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
+        @media(max-width: 992px) {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
         .container {
             padding-top: 20vh;
             padding-bottom: 20vh;
             color: white;
             z-index: 9999999;
+
+            @media(max-width: 992px) {
+                padding-top: 12vh;
+                padding-bottom: 15vh;
+            }
+
         }
 
     }

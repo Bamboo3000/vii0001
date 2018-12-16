@@ -3,7 +3,6 @@
     top: 0;
     z-index: 9999;
     background-color: white;
-    //border-bottom: 5px solid $color-tertiary;
 
     &:after {
         position: absolute;
@@ -28,12 +27,59 @@
 
     .logo {
         padding: 20px 0;
+
+        @media(max-width: 992px) {
+            padding: 15px 0;
+        }
         
         object,
         svg,
         img {
             max-width: 220px;
             width: 100%;
+
+            @media(max-width: 992px) {
+                max-width: 200px;
+            }
+
+        }
+
+    }
+
+    .menu-mobile {
+        border: none;
+        appearance: none;
+        outline: 0;
+        background-color: transparent;
+        line-height: 1;
+        vertical-align: middle;
+        cursor: pointer;
+        display: none;
+        padding: 0;
+
+        @media(max-width: 992px) {
+            display: block;
+        }
+
+        i {
+            font-size: 24px;
+        }
+
+        i,
+        i:before {
+            background: -webkit-linear-gradient(150deg, $color-tertiary, $color-ocean);
+            background: linear-gradient(150deg, $color-tertiary, $color-ocean);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        span {
+            font-size: 18px;
+            font-weight: 700;
+            color: $color-tertiary;
+            line-height: 1;
+            vertical-align: 2px;
+            margin: 0 0 0 5px;
         }
 
     }
@@ -44,6 +90,10 @@
             display: flex;
             flex-wrap: nowrap;
             position: relative;
+
+            @media(max-width: 992px) {
+                display: none;
+            }
 
             li {
                 padding: 20px;

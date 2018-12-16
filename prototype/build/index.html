@@ -34,22 +34,26 @@
         <nav class="navigation__menu">
             <ul>
                 <li>
-                    <a href="javascript:void(0)" onclick="slideTo('.home__about')">Who we are</a>
+                    <a href="javascript:void(0)" onclick="slideTo('#about')">Who we are</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)" onclick="slideTo('.home__process')">What we do</a>
+                    <a href="javascript:void(0)" onclick="slideTo('#process')">What we do</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)" onclick="slideTo('.home__products')">Our products</a>
+                    <a href="javascript:void(0)" onclick="slideTo('#products')">Our products</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)" onclick="slideTo('.home__clients')">Our clients</a>
+                    <a href="javascript:void(0)" onclick="slideTo('#clients')">Our clients</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)" onclick="slideTo('.home__contact')">Contact</a>
+                    <a href="javascript:void(0)" onclick="slideTo('#contact')">Contact</a>
                 </li>
             </ul>
         </nav>
+        <button type="button" class="menu-mobile">
+            <i class="fas fa-bars"></i>
+            <span>MENU</span>
+        </button>
     </div>
 </section>
         <div id="wrapper">
@@ -62,7 +66,7 @@
         </picture>
         <div class="container">
             <div class="row">
-                <div class="col-8">
+                <div class="col-md-8 col-12">
                     <h1>
                         Sourcing & Production
                     </h1>
@@ -74,13 +78,13 @@
             </div>
         </div>
     </header>
-    <section class="home home__about">
+    <section id="about" class="home home__about">
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div class="col-4">
+                <div class="col-lg-4 col-md-5 col-1">
                     <i class="far fa-hand-peace"></i>
                 </div>
-                <div class="col-6 text-right">
+                <div class="col-lg-6 col-md-7 col-11 text-right">
                     <h2 class="text-color">
                         Who we are?
                     </h2>
@@ -95,10 +99,10 @@
             </div>
         </div>
     </section>
-    <section class="home home__process">
+    <section id="process" class="home home__process">
         <div class="container">
             <div class="row justify-content-start align-items-center">
-                <div class="col-6">
+                <div class="col-md-6 col-sm-5">
                     <h2 class="text-color">
                         What we do?
                     </h2>
@@ -108,16 +112,16 @@
                     </p>
                     <a href="javascript:void(0)" onclick="slideTo('.home__contact')" class="btn btn__hollow">Contact us</a>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 col-sm-7">
                     <img class="lazy" data-src="assets/img/assembly.png" alt="Vii Productions assembly line">
                 </div>
             </div>
         </div>
     </section>
-    <section class="home home__products">
+    <section id="products" class="home home__products">
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div class="col-6 text-center">
+                <div class="col-lg-6 col-md-8 text-center">
                     <h2 class="text-color">
                         Our products
                     </h2>
@@ -324,10 +328,10 @@
             </div>
         </div>
     </section>
-    <section class="home home__clients">
+    <section id="clients" class="home home__clients">
         <div class="container">
-            <div class="row justify-content-between align-items-start">
-                <div class="col-6">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6 col-md-5 col-sm-10 offset-sm-1">
                     <h2 class="text-color">
                         Our clients
                     </h2>
@@ -336,9 +340,9 @@
                         We are pride of the people that we can work with. Our clients are most important for us. 
                         Quis assumenda, quod minus aliquam dolore harum reprehenderit beatae expedita veritatis consectetur, in eaque nostrum facere rem. Labore dolorem maiores nostrum iste. 
                     </p>
-                    <a href="javascript:void(0)" onclick="slideTo('.home__contact')" class="btn btn__hollow">Contact us</a>
+                    <a href="javascript:void(0)" onclick="slideTo('.home__contact')" class="btn btn__hollow d-md-inline-block d-sm-none d-none">Contact us</a>
                 </div>
-                <div class="col-5">
+                <div class="col-lg-5 col-md-7 col-sm-10 offset-sm-1">
                     <div class="row align-items-center home__clients-row">
                         <div class="col-4 home__clients-logo">
                             <img class="lazy" data-src="assets/img/disney.png" alt="Disney logo, client of Vii Productions">
@@ -359,11 +363,12 @@
                             <img class="lazy" data-src="assets/img/stirlings_oil.png" alt="Stirlings Oil logo, client of Vii Productions">
                         </div>
                     </div>
+                    <a href="javascript:void(0)" onclick="slideTo('.home__contact')" class="btn btn__hollow d-md-none d-sm-inline-block d-inline-block">Contact us</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="home home__contact">
+    <section id="contact" class="home home__contact">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
@@ -371,7 +376,7 @@
                         Contact us!
                     </h2>
                 </div>
-                <form class="col-md-8">
+                <form class="col-lg-8 col-md-10">
                     <div class="row">
                         <div class="col-md-6">
                             <input type="text" name="names" required placeholder="Name *">
@@ -401,14 +406,14 @@
             <footer class="footer">
                 <div class="container">
                     <div class="row align-items-end footer__contact">
-                        <div class="col-4">
+                        <div class="col-sm-5">
                             <a href="index.html" class="logo">
                                 <object type="image/svg+xml" data="assets/img/logo_white_full_2.svg">
                                     <img src="assets/img/logo-white.png" alt="Vii Productions logo">
                                 </object>
                             </a>
                         </div>
-                        <div class="col-8 text-right">
+                        <div class="col-sm-7 text-right">
                             <a href="mailto:info@viiproductions.com" class="btn btn__default small">info@viiproductions.com</a>
                         </div>
                     </div>
@@ -442,8 +447,8 @@
                             <hr>
                             <p class="text-size-large">
                                 Office F309<br/>
-                                NanBo Building,<br/>
-                                ZhangMuTou DongGuan,<br/>
+                                NanBo Building<br/>
+                                ZhangMuTou DongGuan<br/>
                                 GD, China PO.523620 <br/>
                                 +86 0769-89386960
                             </p>

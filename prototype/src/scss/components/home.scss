@@ -4,8 +4,19 @@
         padding: 32px 0;
         position: relative;
 
+        @media(max-width: 992px) {
+            padding: 24px 0;
+        }
+
         .container {
-            padding: 64px 0;
+            padding-top: 64px;
+            padding-bottom: 64px;
+
+            @media(max-width: 992px) {
+                padding-top: 36px;
+                padding-bottom: 36px;
+            }
+
         }
 
         i,
@@ -16,6 +27,11 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             display: initial; /* reset Font Awesome's display:inline-block */
+
+            @media(max-width: 767px) {
+                opacity: 0.5;
+            }
+
         }
 
     }
@@ -24,9 +40,18 @@
         padding: 64px 0;
         background-color: $color-grey0;
         clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+
+        @media(max-width: 992px) {
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+        }
+
+        @media(max-width: 992px) {
+            padding: 32px 0;
+        }
         
         .container {
-            padding: 96px 0;
+            padding-top: 96px;
+            padding-bottom: 96px;
         }
 
         p {
@@ -37,6 +62,10 @@
 
     &__products {
         padding: 64px 0;
+
+        @media(max-width: 992px) {
+            padding: 36px 0;
+        }
 
         &-row {
             margin-top: 32px;
@@ -112,6 +141,11 @@
                 position: relative;
                 z-index: 9;
                 transition: all 200ms ease;
+
+                @media(max-width: 992px) {
+                    font-size: 28px;
+                }
+
             }
 
             .description {
@@ -129,6 +163,11 @@
                 opacity: 0;
                 z-index: 0;
                 transition: all 200ms ease;
+
+                @media(max-width: 992px) {
+                    font-size: 18px;
+                }
+
             }
 
             // .link {
@@ -153,6 +192,10 @@
         &-item {
             padding: 32px;
             position: relative;
+
+            @media(max-width: 992px) {
+                padding: 16px;
+            }
 
             .btn-cont {
                 display: none;
@@ -222,14 +265,41 @@
         padding: 64px 0;
         background-color: $color-grey0;
         clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+
+        @media(max-width: 992px) {
+            padding: 48px 0;
+            clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+        }
+
+        @media(max-width: 992px) {
+            padding: 36px 0;
+            clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+        }
         
         .container {
-            padding: 96px 0;
+            padding-top: 96px;
+            padding-bottom: 96px;
+
+            @media(max-width: 992px) {
+                padding-top: 64px;
+                padding-bottom: 64px;
+            }
+
+            @media(max-width: 767px) {
+                text-align: center;
+            }
+
         }
 
         &-row {
             display: flex;
             align-items: stretch!important;
+
+            @media(max-width: 767px) {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
         }
 
         &-logo {
@@ -248,10 +318,15 @@
     &__contact {
 
         .container {
-            padding: 64px 0;
+            padding-top: 64px;
+            padding-bottom: 64px;
 
             form {
                 margin-top: 32px;
+
+                @media(max-width: 767px) {
+                    margin-top: 24px;
+                }
                 
                 input,
                 textarea {
@@ -270,6 +345,12 @@
                     transition: all 200ms ease;
                     line-height: 1;
 
+                    @media(max-width: 767px) {
+                        font-size: 18px;
+                        padding: 10px 16px 12px;
+                        margin-bottom: 16px;
+                    }
+
                     &[type="submit"] {
                         display: inline-block;
                         border: none!important;
@@ -280,6 +361,11 @@
                         line-height: 1;
                         transition: none;
                         margin-top: 12px;
+
+                        @media(max-width: 767px) {
+                            margin-top: 8px;
+                            padding: 12px 36px 14px;
+                        }
 
                         &:hover {
                             background: -moz-linear-gradient(150deg, rgba(9,214,112,1) 0%, rgba(0,212,255,1) 100%);
