@@ -20,6 +20,10 @@
                 max-width: 200px;
             }
 
+            @media(max-width: 576px) {
+                max-width: 240px;
+            }
+
         }
 
     }
@@ -32,7 +36,7 @@
         }
 
         @media(max-width: 576px) {
-            margin-bottom: 20px;
+            margin-bottom: 32px;
         } 
 
         .btn {
@@ -61,6 +65,11 @@
 
     &__item {
 
+        @media(max-width: 576px) {
+            margin: 24px auto;
+            text-align: center!important;
+        } 
+
         hr {
             margin: 16px 0;
             height: 2px;
@@ -76,10 +85,14 @@
             margin: 0;
         }
 
-        @media(max-width: 576px) {
-            margin: 24px auto;
-            text-align: center!important;
-        } 
+        address {
+
+            a {
+                color: white!important;
+                text-decoration: none!important;
+            }
+
+        }
 
     }
     

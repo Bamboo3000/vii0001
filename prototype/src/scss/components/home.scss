@@ -387,6 +387,7 @@
                     margin-bottom: 24px;
                     transition: all 200ms ease;
                     line-height: 1;
+                    resize: none;
 
                     @media(max-width: 767px) {
                         font-size: 18px;
