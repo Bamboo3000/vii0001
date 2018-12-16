@@ -83,8 +83,21 @@ function productsCarousel()
 	});
 }
 
+function menuToggle()
+{
+    $('.menu-mobile').on('click', function(){
+        $(this).toggleClass('active').prev().slideToggle(250);
+    });
+    $('.navigation__menu').find('a').on('click', function(){
+        if($(window).width() <= 992) {
+            $('.menu-mobile').toggleClass('active');
+            $('.navigation__menu').slideToggle(250);
+        }
+    });
+}
+
 $(document).ready(function() {
-    
+    menuToggle();
 });
 
 $(window).on('load', function() {

@@ -31,8 +31,25 @@
             margin-bottom: 42px;
         }
 
+        @media(max-width: 576px) {
+            margin-bottom: 20px;
+        } 
+
         .btn {
             margin: 0;
+            
+            @media(max-width: 576px) {
+                margin-top: 30px;
+            } 
+
+        }
+
+        > div {
+            
+            @media(max-width: 576px) {
+                text-align: center!important;
+            } 
+
         }
 
     }
@@ -59,11 +76,25 @@
             margin: 0;
         }
 
+        @media(max-width: 576px) {
+            margin: 24px auto;
+            text-align: center!important;
+        } 
+
     }
     
     &__copyright {
         margin-top: 48px;
         font-weight: 500;
+
+        @media(max-width: 576px) {
+            
+            > div {
+                text-align: center!important;
+                margin: 2px auto;
+            }
+
+        } 
 
         a {
             font-weight: 500;

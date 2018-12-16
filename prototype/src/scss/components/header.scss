@@ -24,6 +24,10 @@
             clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         }
 
+        @media(max-width: 576px) {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
         .container {
             padding-top: 20vh;
             padding-bottom: 20vh;
