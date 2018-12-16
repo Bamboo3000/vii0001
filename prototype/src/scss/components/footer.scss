@@ -21,10 +21,16 @@
 
     &__contact {
         margin-bottom: 32px;
+
+        .btn {
+            margin: 0;
+        }
+
     }
 
     &__title {
         display: block;
+        font-weight: 700;
     }
 
     &__item {

@@ -42,7 +42,30 @@
             margin-top: 32px;
             margin-bottom: 16px; 
             display: flex;
-            align-items: stretch!important;          
+            align-items: stretch!important;
+            position: relative;
+            
+            .owl-prev,
+            .owl-next {
+                position: absolute;
+                top: 50%;
+                color: $color-tertiary;
+                margin-top: -42px;
+                text-align: center;
+                line-height: 1;
+                font-size: 42px;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+
+            .owl-prev {
+                left: -40px;
+            }
+
+            .owl-next {
+                right: -40px;
+            }
+
         }
 
         &-title {
@@ -168,6 +191,29 @@
 
             }
         
+        }
+
+        .owl-carousel {
+
+            .owl-dots {
+
+                button,
+                .owl-dot {
+                    outline: none!important;
+                
+                    &:hover,
+                    &.active {
+                    
+                        span {
+                            background-color: $color-tertiary;
+                        }
+
+                    }
+                    
+                }
+
+            }
+
         }
 
     }

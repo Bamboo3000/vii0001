@@ -32,6 +32,12 @@
 		background-color: white;
 		transition: all 150ms ease;
 
+		&.small {
+			margin: 0 auto;
+			padding: 7px 24px!important;
+			font-size: 17px;
+		}
+
 		&:hover {
 			background-color: $color-tertiary;
 			color: white;

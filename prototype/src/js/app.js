@@ -57,10 +57,11 @@ function lazyImages()
 
 function productsCarousel()
 {
-    $('.owl-carousel').owlCarousel({
-        loop: true,
+    var $owl = $('.owl-carousel');
+	$owl.owlCarousel({
+        loop: false,
         margin: 0,
-        nav: true,
+        nav: false,
         dots: true,
         responsive: {
             0: {
@@ -70,13 +71,20 @@ function productsCarousel()
                 items: 3
             },
         }
-    })
+    });
+    $('.owl-next').click(function() {
+		$owl.trigger('next.owl.carousel');
+	});
+	$('.owl-prev').click(function() {
+		$owl.trigger('prev.owl.carousel');
+	});
 }
 
 $(document).ready(function() {
-    productsCarousel();
+    
 });
 
 $(window).on('load', function() {
-	lazyImages();
+    lazyImages();
+    productsCarousel();
 });
