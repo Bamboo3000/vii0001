@@ -63,6 +63,10 @@ function productsCarousel()
         margin: 0,
         nav: false,
         dots: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        rewind: true,
         responsive: {
             0: {
                 items: 1
