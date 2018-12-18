@@ -76,11 +76,11 @@ class Form extends ComponentBase
 
         });
 
-        Mail::send('sative.contact::mail.'.$template, $inputs, function($message) use ($subject){
+        Mail::send('sative.contact::mail.'.$template, $inputs, function($message) {
 
-            $message->from('info@viiproductions.com', 'Vii Productions');
-            $message->to('ckyckycky@gmail.com');
-            $message->subject($subject);
+            $message->from('web@viiproductions.com', 'Vii Productions');
+            $message->to('info@viiproductions.com');
+            $message->subject('Enquiry from Vii Productions website.');
 
         });
     }
