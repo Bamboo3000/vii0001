@@ -7,7 +7,7 @@ use Redirect;
 use Request;
 use Mail;
 use Validator;
-use \Anhskohbo\NoCaptcha\NoCaptcha;
+// use \Anhskohbo\NoCaptcha\NoCaptcha;
 
 class Form extends ComponentBase
 {

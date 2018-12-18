@@ -5,16 +5,16 @@ plugin:
     icon: oc-icon-briefcase
     homepage: ''
 navigation:
-    main-menu-item:
-        label: Jobs
-        url: searchit/jobs/jobs
-        icon: icon-briefcase
-        sideMenu:
-            side-menu-item:
-                label: Categories
-                url: searchit/jobs/categories
-                icon: icon-sitemap
-            side-menu-item2:
-                label: Types
-                url: searchit/jobs/types
-                icon: icon-cogs
+    # main-menu-item:
+    #     label: Jobs
+    #     url: searchit/jobs/jobs
+    #     icon: icon-briefcase
+    #     sideMenu:
+    #         side-menu-item:
+    #             label: Categories
+    #             url: searchit/jobs/categories
+    #             icon: icon-sitemap
+    #         side-menu-item2:
+    #             label: Types
+    #             url: searchit/jobs/types
+    #             icon: icon-cogs
