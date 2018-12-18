@@ -1,0 +1,357 @@
+description = "Home page"
+
+[staticPage]
+==
+
+{% partial 'head' %}
+
+<header class="header header__home gradient">
+    <picture class="bg-cover-abs">
+        <source media="(min-width: 1920px)" srcset="{{ 'assets/img/header1440p.jpg'|theme }}">
+        <source media="(min-width: 720px)" srcset="{{ 'assets/img/header1080p.jpg'|theme }}">
+        <source media="(min-width: 1px)" srcset="{{ 'assets/img/header720p.jpg'|theme }}">
+        <img class="bg-cover-abs lazy" data-src="{{ 'assets/img/header720p.jpg'|theme }}">
+    </picture>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-12">
+                <h1>
+                    Sourcing & Production
+                </h1>
+                <h2 class="text-size-large">
+                    Vii Productions stands for personal care and strong customer service, a high level of customization and a possible one-stop-shop solution by providing integrated solutions from product development to shipping goods.
+                </h2>
+                <a href="javascript:void(0)" onclick="slideTo('.home__contact')" class="btn btn__default">Contact us</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="about" class="home home__about">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-4 col-md-5 col-sm-1 col-12">
+                <i class="far fa-hand-peace"></i>
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-11 col-12 text-right">
+                <h3 class="text-color text-size-xxxlarge">
+                    Who we are?
+                </h3>
+                <hr class="color">
+                <p class="text-size-large">
+                    With offices in Hong Kong, China and The Netherlands, Vii Productions is a highly dedicated dynamic sourcing and product development company.
+                    <br/><br/> 
+                    Our team of creative, eager and pragmatic people has many years of experience in design, concept development, production and sourcing. We ensure to deliver the best quality for competative prices.
+                </p>
+                <a href="javascript:void(0)" onclick="slideTo('.home__contact')" class="btn btn__color">Contact us</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="process" class="home home__process">
+    <div class="container">
+        <div class="row justify-content-start align-items-center">
+            <div class="col-md-6 col-sm-5 col-12">
+                <h3 class="text-color text-size-xxxlarge">
+                    What we do?
+                </h3>
+                <hr class="color">
+                <p class="text-size-large">
+                    Besides sourcing of existing goods we devise, design and produce customized products. Together we will explore the possibilities for your product or concept. 
+                </p>
+                <a href="javascript:void(0)" onclick="slideTo('.home__contact')" class="btn btn__hollow d-none d-sm-inline-block">Contact us</a>
+            </div>
+            <div class="col-md-6 col-sm-7 col-12 home__process-assembly">
+                <img class="lazy" data-src="{{ 'assets/img/assembly.png'|theme }}" alt="Vii Productions assembly line">
+            </div>
+            <a href="javascript:void(0)" onclick="slideTo('.home__contact')" class="btn btn__hollow d-inline-block d-sm-none">Contact us</a>
+        </div>
+    </div>
+</section>
+<section id="products" class="home home__products">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-8 text-center">
+                <h3 class="text-color text-size-xxxlarge">
+                    Our products
+                </h3>
+                <hr class="color">
+                <p class="text-size-large">
+                    Our broad experience within multiple product categories varying from packaging to travel goods to stationery results in being able to offer a wide range of products.<br/>
+                    We focus on delivering high quality goods tailored to your needs at a cost competitive level.We would love to hear more about your idea or product and make it happen.
+                </p>
+            </div>
+        </div>
+        <div class="home__products-row">
+            <div class="owl-carousel owl-theme">
+                <div class="item text-center home__products-item">
+                    <div class="home__products-img">
+                        <img class="lazy" data-src="{{ 'assets/img/baby_products.jpg'|theme }}" alt="">
+                        <div class="center">
+                            <span class="home__products-title">
+                                Baby products
+                            </span>
+                            <p class="description">
+                                Baby wears<br/>
+                                Baby toys & Activities<br/>
+                                Baby shoes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item text-center home__products-item">
+                    <div class="home__products-img">
+                        <img class="lazy" data-src="{{ 'assets/img/sports_goods.jpg'|theme }}" alt="">
+                        <div class="center">
+                            <span class="home__products-title">
+                                Sports Goods
+                            </span>
+                            <p class="description">
+                                Cycling supplies<br/>
+                                Camping & Picnic equipment<br/>
+                                Sportswear
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item text-center home__products-item">
+                    <div class="home__products-img">
+                        <img class="lazy" data-src="{{ 'assets/img/textiles.jpg'|theme }}" alt="">
+                        <div class="center">
+                            <span class="home__products-title">
+                                Textile, Fabrics & Yarns
+                            </span>
+                            <p class="description">
+                                Yarns<br/>
+                                Woven<br/>
+                                Home textiles
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item text-center home__products-item">
+                    <div class="home__products-img">
+                        <img class="lazy" data-src="{{ 'assets/img/packaging.jpg'|theme }}" alt="">
+                        <div class="center">
+                            <span class="home__products-title">
+                                Packaging Products & Materials
+                            </span>
+                            <p class="description">
+                                Plastic packaging<br/>
+                                Paper packaging<br/>
+                                Metal packaging
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item text-center home__products-item">
+                    <div class="home__products-img">
+                        <img class="lazy" data-src="{{ 'assets/img/furniture.jpg'|theme }}" alt="">
+                        <div class="center">
+                            <span class="home__products-title">
+                                Furniture & Furnishing
+                            </span>
+                            <p class="description">
+                                Home decorations & Crafts<br/>
+                                Home furniture<br/>
+                                Home textiles
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item text-center home__products-item">
+                    <div class="home__products-img">
+                        <img class="lazy" data-src="{{ 'assets/img/gift.jpg'|theme }}" alt="">
+                        <div class="center">
+                            <span class="home__products-title">
+                                Gift & Premiums
+                            </span>
+                            <p class="description">
+                                Gift / Souvenirs<br/>
+                                Party supplies<br/>
+                                Festive supplies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item text-center home__products-item">
+                    <div class="home__products-img">
+                        <img class="lazy" data-src="{{ 'assets/img/handbags.jpg'|theme }}" alt="">
+                        <div class="center">
+                            <span class="home__products-title">
+                                Handbags & Travel Goods
+                            </span>
+                            <p class="description">
+                                Handbags<br/>
+                                Travel bags & Luggage<br/>
+                                Wallets / Purses & Holder
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item text-center home__products-item">
+                    <div class="home__products-img">
+                        <img class="lazy" data-src="{{ 'assets/img/household.jpg'|theme }}" alt="">
+                        <div class="center">
+                            <span class="home__products-title">
+                                Household Products
+                            </span>
+                            <p class="description">
+                                Tableware<br/>
+                                Kitchenware<br/>
+                                Sundry household items
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item text-center home__products-item">
+                    <div class="home__products-img">
+                        <img class="lazy" data-src="{{ 'assets/img/office.jpg'|theme }}" alt="">
+                        <div class="center">
+                            <span class="home__products-title">
+                                Stationary & Office Equipment
+                            </span>
+                            <p class="description">
+                                Stationery<br/>
+                                Office equipment<br/>
+                                Greeting & Invitation cards
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item text-center home__products-item">
+                    <div class="home__products-img">
+                        <img class="lazy" data-src="{{ 'assets/img/toys.jpg'|theme }}" alt="">
+                        <div class="center">
+                            <span class="home__products-title">
+                                Toys & Games
+                            </span>
+                            <p class="description">
+                                Educational toys<br/>
+                                Electronic toys<br/>
+                                Plush & Stuffed toys
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item text-center home__products-item">
+                    <div class="home__products-img">
+                        <img class="lazy" data-src="{{ 'assets/img/eyewear.jpg'|theme }}" alt="">
+                        <div class="center">
+                            <span class="home__products-title">
+                                Eyewear & Accessories
+                            </span>
+                            <p class="description">
+                                Glasses frames<br/>
+                                Sunglasses<br/>
+                                Eyewear parts & Accessories
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item text-center home__products-item">
+                    <div class="home__products-img">
+                        <img class="lazy" data-src="{{ 'assets/img/garments.jpg'|theme }}" alt="">
+                        <div class="center">
+                            <span class="home__products-title">
+                                Garments & Clothing Accessories
+                            </span>
+                            <p class="description">
+                                Garments<br/>
+                                Clothing accessories<br/>
+                                Fashion accessories
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="owl-next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 text-center">
+                <a href="javascript:void(0)" onclick="slideTo('.home__contact')" class="btn btn__hollow">Contact us</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="clients" class="home home__clients">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6 col-md-5 col-sm-10 offset-md-0 offset-sm-1">
+                <h3 class="text-color text-size-xxxlarge">
+                    Our clients
+                </h3>
+                <hr class="color">
+                <p class="text-size-large">
+                    We take pride in what we do, but most of all, we take pride in the people and brands we are lucky enough to work with.<br/>
+                    People with a passion for their ideas, and it is our mission to serve that passion. 
+                </p>
+                <a href="javascript:void(0)" onclick="slideTo('.home__contact')" class="btn btn__hollow d-md-inline-block d-sm-none d-none">Contact us</a>
+            </div>
+            <div class="col-lg-5 col-md-7 col-sm-10 offset-md-0 offset-sm-1">
+                <div class="row align-items-center home__clients-row">
+                    <div class="col-4 home__clients-logo">
+                        <img class="lazy" data-src="{{ 'assets/img/disney.png'|theme }}" alt="Disney logo, client of Vii Productions">
+                    </div>
+                    <div class="col-4 home__clients-logo">
+                        <img class="lazy" data-src="{{ 'assets/img/ahold.png'|theme }}" alt="Ahold logo, client of Vii Productions">
+                    </div>
+                    <div class="col-4 home__clients-logo">
+                        <img class="lazy" data-src="{{ 'assets/img/loblaws.png'|theme }}" alt="Loblaws logo, client of Vii Productions">
+                    </div>
+                    <div class="col-4 home__clients-logo">
+                        <img class="lazy" data-src="{{ 'assets/img/air_canada.png'|theme }}" alt="Air Canada logo, client of Vii Productions">
+                    </div>
+                    <div class="col-4 home__clients-logo">
+                        <img class="lazy" data-src="{{ 'assets/img/pancakes_amsterdam.png'|theme }}" alt="Pancakes Amsterdam logo, client of Vii Productions">
+                    </div>
+                    <div class="col-4 home__clients-logo">
+                        <img class="lazy" data-src="{{ 'assets/img/stirlings_oil.png'|theme }}" alt="Stirlings Oil logo, client of Vii Productions">
+                    </div>
+                </div>
+                <a href="javascript:void(0)" onclick="slideTo('.home__contact')" class="btn btn__hollow d-md-none d-sm-inline-block d-inline-block">Contact us</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="home home__contact">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h3 class="text-center text-color text-size-xxxlarge">
+                    Contact us!
+                </h3>
+            </div>
+            <form class="col-lg-8 col-md-10">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" name="names" required placeholder="Name *">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="company" placeholder="Company">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="email" name="email" required placeholder="Email *">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="phone" placeholder="Telephone">
+                    </div>
+                </div>
+                <textarea name="info" rows="8" required placeholder="Message *"></textarea>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <input type="submit" value="Send enquiry">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+{% partial 'footer' %}

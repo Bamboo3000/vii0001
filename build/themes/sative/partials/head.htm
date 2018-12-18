@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        {% if this.page.meta_title %}
+			{{ this.page.meta_title }}
+		{% else %}
+			{{ this.page.title }}
+		{% endif %}
+    </title>
+    {% if this.page.meta_description %}
+		<meta name="description" content="{{ this.page.meta_description }}">
+	{% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/img/apple-touch-icon.png'|theme }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/img/favicon-32x32.png'|theme }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/img/favicon-16x16.png'|theme }}">
+    <link rel="manifest" href="{{ 'assets/img/site.webmanifest'|theme }}">
+    <link rel="mask-icon" href="{{ 'assets/img/safari-pinned-tab.svg'|theme }}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </noscript>
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,400i,500,600,700,800" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css?family=Barlow:400,400i,500,600,700,800" rel="stylesheet">
+    </noscript>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    </noscript>
+    <link rel="stylesheet" href="{{ 'assets/css/prototype.css'|theme }}">
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    {% partial 'nav' %}
+    <div id="wrapper">
